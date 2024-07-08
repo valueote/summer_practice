@@ -253,7 +253,6 @@ EncodingTreeNode* createExampleTree() {
      *                / \
      *               R   S
      */
-    /* TODO: Implement this utility function needed for testing. */
     EncodingTreeNode* nodeR = new EncodingTreeNode('R');
     EncodingTreeNode* nodeS = new EncodingTreeNode('S');
     EncodingTreeNode* nodeE = new EncodingTreeNode('E');
@@ -287,7 +286,6 @@ EncodingTreeNode* createTestTree() {
 
 
 void deallocateTree(EncodingTreeNode* t) {
-    /* TODO: Implement this utility function needed for testing. */
     if(t->isLeaf()){
         delete t;
     }else{
@@ -298,7 +296,6 @@ void deallocateTree(EncodingTreeNode* t) {
 }
 
 bool areEqual(EncodingTreeNode* a, EncodingTreeNode* b) {
-    /* TODO: Implement this utility function needed for testing. */
     if(a == nullptr || b == nullptr){
         return a == b;
     }else if(a->isLeaf() && !b->isLeaf()){
@@ -315,7 +312,6 @@ bool areEqual(EncodingTreeNode* a, EncodingTreeNode* b) {
 
 /* * * * * * Test Cases Below This Point * * * * * */
 
-/* TODO: Write your own student tests. */
 STUDENT_TEST("Test the createExampleTree and deallocateTree"){
     EncodingTreeNode* t = createExampleTree();
     deallocateTree(t);
